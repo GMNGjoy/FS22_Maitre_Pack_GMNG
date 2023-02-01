@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="manureSpreader" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="../FS22_Maitre_Pack/Vulcain_200/Vulcain_200_2.xml">
+        <attributes>
+            <!-- re-set paths since we're extending it -->
+            <set path="vehicle.storeData.name" value="Vulcain 200 Double Black Edition"/>
+            <set path="vehicle.storeData.image" value="icons/store_vulcain200_2.dds"/>
+            <set path="vehicle.base.filename" value="../FS22_Maitre_Pack/Vulcain_200/Vulcain.i3d"/>
+
+            <!-- Black Capacity Fill Unit -->
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3)#name" value="$l10n_configuration_blackCapacity"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3)#price" value="15000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0)#shopDisplayUnit" value="CUBICMETER"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0)#fillTypeCategories" value="manureSpreader"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0)#capacity" value="63000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).exactFillRootNode#node" value="exactFillRootNode" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#node" value="fillAutoAimTargetNode" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(0)#node" value="MetalConfig" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(0)#visibilityActive" value="true" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(1)#node" value="WoodConfig" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(1)#visibilityActive" value="false" />
+
+            <!-- Black Capacity Configuration -->
+            <set path="vehicle.configurationSets.configurationSet(3)#name" value="$l10n_configuration_blackCapacity" />
+            <set path="vehicle.configurationSets.configurationSet(3).configuration(0)#name" value="fillUnit" />
+            <set path="vehicle.configurationSets.configurationSet(3).configuration(0)#index" value="4" />
+            <set path="vehicle.configurationSets.configurationSet(3).configuration(1)#name" value="fillVolume" />
+            <set path="vehicle.configurationSets.configurationSet(3).configuration(1)#index" value="2" />
+
+            <!-- base color -->
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(0)#value" value="SHARED_BLACK1"/>
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#value" value="SHARED_BLACK1"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(2).shaderParameter(0)#value" value="SHARED_BLACK1"/>
+            <set path="vehicle.baseMaterial.material(2).shaderParameter(0)#name" value="colorMat0"/>
+
+            <!-- primary color -->
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="8"/>  
+
+            <!-- secondary color -->
+            <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterialConfigurations#defaultColorIndex" value="6"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#name" value="spreader"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat1"/>  
+
+             <!-- rim configurations -->
+             <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+             <set path="vehicle.rimColorConfigurations#defaultColorIndex" value="7"/>
+             <set path="vehicle.rimColorConfigurations#price" value="0"/>
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>Vulcain 200 Double Black Edition</name>
+        <image>icons/store_vulcain200_2.dds</image>
+        <brand>MAITRE</brand>
+        <category>manureSpreaders</category>
+    </storeData>
+</vehicle>

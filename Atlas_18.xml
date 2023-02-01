@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="trailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="../FS22_Maitre_Pack/Atlas_18/Atlas_18.xml">
+        <attributes>
+            <!-- re-set paths since we're extending it -->
+            <set path="vehicle.storeData.name" value="Atlas 18 Black Edition"/>
+            <set path="vehicle.storeData.image" value="icons/store_atlas18.dds"/>
+            <set path="vehicle.base.filename" value="../FS22_Maitre_Pack/Atlas_18/Atlas18.i3d"/>
+
+            <!-- Black Capacity Fill Unit -->
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3)#name" value="$l10n_configuration_blackCapacity"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3)#price" value="15000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0)#shopDisplayUnit" value="CUBICMETER"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0)#fillTypeCategories" value="BULK"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0)#capacity" value="117000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0)#allowAILoading" value="true"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).exactFillRootNode#node" value="exactFillRootNode" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#node" value="fillAutoAimTargetNode" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#startZ" value="6.7" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#endZ" value="0" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#invert" value="false" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#startPercentage" value="25" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(0)#node" value="GrainExtension" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(0)#visibilityActive" value="true" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(1)#node" value="backDoorGrainExtension" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(1)#visibilityActive" value="false" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(2)#node" value="BackGrainExtension" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(2)#visibilityActive" value="false" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(3)#node" value="SilageExtension" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(3)#visibilityActive" value="true" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(4)#node" value="backDoorSilageExtension" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(4)#visibilityActive" value="true" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(5)#node" value="BackSilageExtension" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(5)#visibilityActive" value="true" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(6)#node" value="backDoorGrainExtensionCol" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(6)#compoundChildActive" value="false" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(7)#node" value="ai" />
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(7)#translationActive" value="0 0.9 0" />
+
+            <!-- Black Capacity Configuration -->
+            <set path="vehicle.configurationSets.configurationSet(3)#name" value="$l10n_configuration_blackCapacity" />
+            <set path="vehicle.configurationSets.configurationSet(3).configuration(0)#name" value="fillUnit" />
+            <set path="vehicle.configurationSets.configurationSet(3).configuration(0)#index" value="4" />
+            <set path="vehicle.configurationSets.configurationSet(3).configuration(1)#name" value="fillVolume" />
+            <set path="vehicle.configurationSets.configurationSet(3).configuration(1)#index" value="3" />
+            <set path="vehicle.configurationSets.configurationSet(3).configuration(2)#name" value="trailer" />
+            <set path="vehicle.configurationSets.configurationSet(3).configuration(2)#index" value="1" />
+
+            <!-- base color -->
+            <set path="vehicle.baseMaterial.material(0)#name" value="trailer"/>
+            <set path="vehicle.baseMaterial.material(0)#baseNode" value="0>0"/>
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(0)#value" value="SHARED_BLACK1"/>
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(0)#name" value="colorMat0"/>
+
+            <!-- primary color -->
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="8"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="trailer"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>  
+
+            <!-- secondary color -->
+            <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterialConfigurations#defaultColorIndex" value="6"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#name" value="trailer"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat1"/>  
+
+             <!-- rim configurations -->
+             <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+             <set path="vehicle.rimColorConfigurations#defaultColorIndex" value="7"/>
+             <set path="vehicle.rimColorConfigurations#price" value="0"/>
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>Atlas 18 Black Edition</name>
+        <image>icons/store_atlas18.dds</image>
+        <brand>MAITRE</brand>
+        <category>trailers</category>
+    </storeData>
+</vehicle>

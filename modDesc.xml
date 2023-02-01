@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="71">
+    <author>Nico Pix / Nico Du 55, GMNGjoy</author>
+    <version>1.1.0.0</version>
+    
+	<title>
+        <en>Maitre Pack Black Edition</en>
+		<fr>Pack Maitre Black Edition</fr>
+    </title>
+	
+	<description>
+        <en>
+<![CDATA[The Maitre Pack contains 7 trailers.
+ATLAS 18.
+- Price: 30.300 €
+- Capacity: 24.200 L
+- Color configuration
+- Design configuration
+
+DUMP 18T/21T.
+- Price: 43.500 €
+- Capacity: 10.800 L
+- Color configuration
+
+VULCAIN 200 Simple axis.
+- Price: 35.500 €
+- Capacity: 19.000 L
+- Working width: 12.0 m
+- Color configuration
+
+VULCAIN 200 Double axis.
+- Price: 49.500 €
+- Capacity: 19.000 L
+- Working width: 12.0 m
+- Color configuration
+
+PMF 160 SP 9m.
+- Price: 15.400 €
+- Autoload
+- Capacity: 28 square bale / 35 round bale
+- Color configuration
+- Ladders fourragère
+
+PMF 160 SP 10m.
+- Price: 17.100 €
+- Autoload
+- Capacity: 32 square bale / 40 round bale
+- Color configuration
+- Ladders configuration
+
+PM6R 200 12m.
+- Price: 19.450 €
+- Autoload
+- Capacity: 40 square bale / 45 round bale
+- Color configuration
+- Ladders configuration]]>
+        </en>
+		<de>
+<![CDATA[Das Maitre Pack enthält 7 Anhänger.
+ATLAS 18:
+- Preis: 30.300 €
+- Kapazität: 24.200 L
+- Farbwahl
+- Designkonfiguration
+
+DUMP 18T/21T:
+- Preis: 43.500 €
+- Kapazität: 10.800 L
+- Farbwahl
+
+VULCAIN 200 Einachser:
+- Preis: 35.500 €
+- Kapazität: 19.000 L
+- Arbeitsbreite: 12.0 m
+- Farbwahl
+
+VULCAIN 200 Tandem:
+- Preis: 49.500 €
+- Kapazität: 19.000 L
+- Arbeitsbreite: 12.0 m
+- Farbwahl
+
+PMF 160 SP 9m:
+- Preis: 15.400 €
+- Autoload
+- Kapazität: 28 Quaderballen / 35 Rundballen
+- Farbwahl
+- Aufbau Konfiguration
+
+PMF 160 SP 10m:
+- Preis: 17.100 €
+- Autoload
+- Kapazität: 32 Quaderballen / 40 Rundballen
+- Farbwahl
+- Aufbau Konfiguration
+
+PM6R 200 12m:
+- Preis: 19.450 €
+- Autoload
+- Kapazität: 40 Quaderballen / 45 Rundballen
+- Farbwahl
+- Aufbau Konfiguration]]>
+		</de>
+        <fr>
+<![CDATA[Pack Maitre contenant 7 outils.
+ATLAS 18.
+- Prix: 30.300 €
+- Capacité: 24.200 L
+- Choix de couleur
+- Option de design
+
+DUMP 18T/21T.
+- Prix: 43.500 €
+- Capacité: 10.800 L
+- Choix de couleur
+
+VULCAIN 200 Simple essieu.
+- Prix: 35.500 €
+- Capacité: 19.000 L
+- Largeur de travail: 12.0 m
+- Choix de couleur
+
+VULCAIN 200 Double essieux.
+- Prix: 49.500 €
+- Capacité: 19.000 L
+- Largeur de travail: 12.0 m
+- Choix de couleur
+
+PMF 160 SP 9m.
+- Prix: 15.400 €
+- Autoload
+- Capacité: 28 balles carré / 35 balles ronde
+- Choix de couleur
+- Option fourragère
+
+PMF 160 SP 10m.
+- Prix: 17.100 €
+- Autoload
+- Capacité: 32 balles carré / 40 balles ronde
+- Choix de couleur
+- Option fourragère
+
+PM6R 200 12m.
+- Prix: 19.450 €
+- Autoload
+- Capacité: 40 balles carré / 45 Rundballen
+- Choix de balles ronde
+- Option fourragère]]>
+        </fr>
+    </description>	
+	
+    <iconFilename>icon_pack.dds</iconFilename>
+	
+    <multiplayer supported="true"/>
+	
+	<brands>
+        <brand name="MAITRE" title="Maitre" image="brand_maitre.dds"/>
+    </brands>
+	
+    <brandColors>
+        <color name="MAITRE_YELLOW" value="0.917 0.313 0 0" />
+        <color name="MAITRE_RED" value="0.4 0.028 0.028 0" />
+        <color name="MAITRE_GREY" value="0.105 0.105 0.105 0" />
+    </brandColors>
+
+	<storeItems>
+        <storeItem rootNode="vehicle" xmlFilename="Atlas_18.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="Vulcain_200_1.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="Vulcain_200_2.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="Dump.xml"/> 
+        <storeItem rootNode="vehicle" xmlFilename="PMF160SP_9.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="PMF160SP_10.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="PM6R200.xml"/>
+    </storeItems>
+
+    <l10n>
+        <!-- GMNG -->
+        <text name="configuration_blackCapacity">
+			<en>Black Capacity</en>
+		</text>
+        <text name="configuration_capacityXType">
+			<en>Capacity %s | %s</en>
+		</text>
+        <text name="configuration_frameColor">
+			<en>Frame Color</en>
+		</text>
+		<!-- ATLAS -->
+        <text name="configuration_ridelleGrain">
+            <en>Grain bodywork</en>
+            <de>Getreide Bordwanderhöhung</de>
+            <fr>Ridelles Grain</fr>
+        </text>
+        <text name="configuration_ridelleEnsilage">
+            <en>Silage bodywork</en>
+            <de>Silage Bordwanderhöhung</de>
+            <fr>Ridelles Ensilage</fr>
+        </text>
+		<text name="configuration_platform">
+            <en>Platform</en>
+            <de>Plattform</de>
+            <fr>Passerelle</fr>
+        </text>
+		<!-- VULCAIN -->
+        <text name="configuration_Metal">
+            <en>Metal bodywork</en>
+            <de>Bordwanderhöhung Metall</de>
+            <fr>Ridelles Metal</fr>
+        </text>
+        <text name="configuration_Wood">
+            <en>Wood bodywork</en>
+            <de>Bordwanderhöhung Holz</de>
+            <fr>Ridelles Bois</fr>
+        </text>
+		<!-- PLATEAU -->
+		<text name="configuration_BaleType0">
+            <fr>Fourragère balle ronde</fr> 
+            <en>Round bales ladders</en> 
+            <de>Rundballen Aufbau</de> 
+        </text>
+		<text name="configuration_BaleType1">
+            <fr>Fourragère balle carré</fr> 
+            <en>Square bales ladders</en> 
+            <de>Quaderballen Aufbau</de> 
+        </text>
+    </l10n>
+</modDesc>

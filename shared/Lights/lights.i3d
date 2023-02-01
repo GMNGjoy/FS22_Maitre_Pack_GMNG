@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Feux" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="Specular.dds"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="9" filename="$data/shared/clearGlass_diffuse.dds"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Glass_Mat" materialId="4" alphaBlending="true" customShaderId="4" customShaderVariation="colorMask">
+      <Texture fileId="9"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.4 0.4 0.4 2"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Iner_Mat" materialId="5" diffuseColor="0.839216 0.584314 0.729412 1" customShaderId="4" customShaderVariation="staticLight">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 0 0 2"/>
+      <CustomParameter name="colorMat1" value="1 0 0 2"/>
+      <CustomParameter name="colorMat2" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat3" value="1 0 0 2"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="Plastic_Mat" materialId="6" diffuseColor="0.611765 0.941177 0.584314 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 0 0 22"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="lights.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="LeftLight" nodeId="16" materialIds="6" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="ClignoGauche" nodeId="17" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="FeuxGauche" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="StopGauche" nodeId="19" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="Tranparent" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="1" name="RightLight" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="6" name="ClignoDroite" nodeId="22" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="FeuxDroite" nodeId="23" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="StopDroite" nodeId="24" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="Tranparent" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+  </Scene>
+
+</i3D>

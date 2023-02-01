@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="trailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="../FS22_Maitre_Pack/PMF160SP_10/PMF160SP_10.xml">
+        <attributes>
+            <!-- re-set paths since we're extending it -->
+            <set path="vehicle.storeData.name" value="PMF160SP 10m Black Edition"/>
+            <set path="vehicle.storeData.image" value="icons/store_PMF160SP_10.dds"/>
+            <set path="vehicle.base.filename" value="../FS22_Maitre_Pack/PMF160SP_10/PMF160SP_10.i3d"/>
+            
+            <!-- base color -->
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(0)#value" value="SHARED_BLACK1"/>
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(0)#name" value="colorMat0"/>
+
+            <!-- primary color -->
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="8"/>
+
+             <!-- rim configurations -->
+             <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+             <set path="vehicle.rimColorConfigurations#defaultColorIndex" value="7"/>
+             <set path="vehicle.rimColorConfigurations#price" value="0"/>
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>PMF160SP 10m Black Edition</name>
+        <image>icons/store_PMF160SP_10.dds</image>
+        <brand>MAITRE</brand>
+        <category>trailers</category>
+    </storeData>
+</vehicle>
